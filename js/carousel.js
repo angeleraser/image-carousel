@@ -86,8 +86,6 @@ export class CarouselComponent {
 
   showPrevSlide() {
     const slidesContainer = this.root.querySelector(".carousel-slides");
-
-    console.log(this.computedSize);
     this.currentXtranslation -= this.computedSize;
 
     if (this.currentXtranslation <= 0) {
